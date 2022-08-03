@@ -1,0 +1,321 @@
+/* CSS FILE */
+
+  /* RESET ______________________________________*/
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+
+  /* GENERAL SETTINGS ______________________________________*/
+
+  :root {
+    --grey: #E6E6E6;
+  }
+
+  /* FONTS */
+  @font-face {
+    font-family: PPEditorialNew-Ultralight;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Ultralight.otf);
+  }
+
+  @font-face {
+    font-family: PPEditorialNew-UltralightItalic;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-UltralightItalic.otf);
+  }
+
+  @font-face {
+    font-family: PEditorialNew-Regular;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Regular.otf);
+  }
+
+  @font-face {
+    font-family: PPEditorialNew-Italic;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Italic.otf);
+  }
+
+  @font-face {
+    font-family: Karla-Regular;
+    src: url(fonts/karla/Karla-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Karla-Italic;
+    src: url(fonts/karla/Karla-Italic.ttf);
+  }
+
+  @font-face {
+    font-family: Karla-SemiBold;
+    src: url(fonts/karla/Karla-SemiBold.ttf);
+  }
+
+
+/* BODY ---------------------------------------------------------------*/
+body {
+  background-color: var(--grey);
+  font-family: Karla-Regular;
+  font-size: 14pt;
+  margin: 20px;
+}
+
+/* selection color
+Code for Firefox */
+::-moz-selection {
+  color: var(--grey);
+  background: black;
+}
+
+::selection {
+  color: var(--grey);
+  background: black;
+}
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+
+/* MAIN ---------------------------------------------------------------*/
+.grid {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  column-gap: 5%;
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEXT */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: Karla-SemiBold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Karla-SemiBold;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+/* HEADER -------------------------------------------------------------*/
+header {
+  position: fixed;
+  top: 20px;
+  z-index: 10;
+}
+
+header p:hover{
+  text-decoration:underline;
+}
+
+header p {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* HOME ---------------------------------------------------------------*/
+#home article {
+  font-family: PPEditorialNew-Ultralight;
+  font-size: 2.5vw;
+}
+
+#colophon {
+  position: absolute;
+  padding-top: 65vh;
+  padding-bottom: 150px;
+}
+
+/*3D OBJECT*/
+#object {
+  position: fixed;
+  top: 0;
+  right: 20vw;
+  bottom: 10vh;
+  width: 40vw;
+}
+  
+/* This styles the 3D object inserted in the "object" container*/
+#object model-viewer {    
+  position: absolute;
+  bottom: 0;
+  height: 70vh;
+  width: 40vw;
+  border: none;
+} 
+
+/* PROJECTS --------------------------------------------------------------*/
+#projects {
+  display: none;
+}
+
+.text-projects {
+  position: sticky; 
+  top: 20px;
+  padding-top: 100px;
+  height: 75vh;
+}
+
+.text-projects p {
+  padding-bottom: 20px;
+}
+
+.indice-img {
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.indice-img img {
+  width: 33%;
+  cursor: pointer;
+}
+
+.indice-img img:hover {
+  transform: scale(0.98);
+  transition-duration: 0.15s;
+}
+
+/* PROJECT 1 -------------------------------------------------------------*/
+#project-1 {
+  display: none;
+}
+
+/* PROJECT 2 -------------------------------------------------------------*/
+#project-2 {
+  display: none;
+}
+
+/* PROJECT 3 -------------------------------------------------------------*/
+#project-3 {
+  display: none;
+}
+
+/* PROJECT 4 -------------------------------------------------------------*/
+#project-4 {
+  display: none;
+}
+
+/* PROJECT 5 -------------------------------------------------------------*/
+#project-5 {
+  display: none;
+}
+
+/* PROJECT 6 -------------------------------------------------------------*/
+#project-6 {
+  display: none;
+}
+
+/* FOOTER -------------------------------------------------------------*/
+footer {
+  position: fixed;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+footer nav {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  width: 100vw;
+}
+
+footer nav a , footer nav span{
+  align-self: flex-end;
+}
+
+footer nav span {
+  font-family: PPEditorialNew-Ultralight;
+  font-size: 2.5vw;
+  text-transform:capitalize;
+}
+
+footer nav span:hover {
+  cursor: pointer;
+  font-family: PPEditorialNew-UltralightItalic;
+}
+
+/* RESPONSIVE MEDIA -----------------------------------------------------*/
+/*MOBILE ----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) { 
+}
+
+/* TABLET _--------------------------------------------------------------*/
+@media only screen and (max-width: 992px){
+
+  /* BODY */
+  body {
+    font-size: 11pt;
+  }
+
+  /* MAIN */
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+  }
+
+  /* HOME */ 
+  #colophon {
+    padding-top: 55vh;
+    padding-bottom: 50PX;
+  }
+
+  /* PROJECTS */
+  .indice-img img {
+    width: 49%;
+  }
+
+}
