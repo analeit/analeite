@@ -1,0 +1,538 @@
+/* CSS FILE */
+
+  /* RESET ______________________________________*/
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+
+  /* GENERAL SETTINGS ______________________________________*/
+
+  :root {
+    --grey: #E6E6E6;
+  }
+
+  /* FONTS */
+  @font-face {
+    font-family: PPEditorialNew-Ultralight;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Ultralight.otf);
+  }
+
+  @font-face {
+    font-family: PPEditorialNew-UltralightItalic;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-UltralightItalic.otf);
+  }
+
+  @font-face {
+    font-family: PEditorialNew-Regular;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Regular.otf);
+  }
+
+  @font-face {
+    font-family: PPEditorialNew-Italic;
+    src: url(fonts/pp-editorial-new/PPEditorialNew-Italic.otf);
+  }
+
+  @font-face {
+    font-family: Karla-Regular;
+    src: url(fonts/karla/Karla-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Karla-Italic;
+    src: url(fonts/karla/Karla-Italic.ttf);
+  }
+
+  @font-face {
+    font-family: Karla-SemiBold;
+    src: url(fonts/karla/Karla-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: Karla-SemiBoldItalic;
+    src: url(fonts/karla/Karla-SemiBoldItalic.ttf);
+  }
+
+/* BODY ---------------------------------------------------------------*/
+body {
+  background-color: var(--grey);
+  font-family: Karla-Regular;
+  font-size: 14pt;
+  margin: 20px;
+}
+
+/* selection color
+Code for Firefox */
+::-moz-selection {
+  color: var(--grey);
+  background: black;
+}
+
+::selection {
+  color: var(--grey);
+  background: black;
+}
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+
+/* MAIN ---------------------------------------------------------------*/
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TEXT */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: Karla-SemiBold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Karla-SemiBold;
+}
+
+h4 {
+  padding-top: 50px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+/* HEADER -------------------------------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header p:hover{
+  text-decoration:underline;
+}
+
+header p {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* HOME ---------------------------------------------------------------*/
+#home article {
+  font-family: PPEditorialNew-Ultralight;
+}
+
+/*3D OBJECT*/
+#object {
+  position: fixed;
+}
+  
+#object model-viewer {    
+  position: absolute;
+  bottom: 0;
+  border: none;
+} 
+
+/* PROJECTS --------------------------------------------------------------*/
+#projects {
+  display: none;
+}
+
+.text-projects p {
+  padding-bottom: 20px;
+}
+
+.indice-img img:hover {
+  transform: scale(0.98);
+  transition-duration: 0.15s;
+  cursor: pointer;
+}
+
+.open-project:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.img-link:hover {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  transition: 0.2s;
+}
+
+/* PROJECT 1 -------------------------------------------------------------*/
+#project-1 {
+  display: none;
+}
+
+/* PROJECT 2 -------------------------------------------------------------*/
+#project-2 {
+  display: none;
+}
+
+/* PROJECT 3 -------------------------------------------------------------*/
+#project-3 {
+  display: none;
+}
+
+/* PROJECT 4 -------------------------------------------------------------*/
+#project-4 {
+  display: none;
+}
+
+/* PROJECT 5 -------------------------------------------------------------*/
+#project-5 {
+  display: none;
+}
+
+/* PROJECT 6 -------------------------------------------------------------*/
+#project-6 {
+  display: none;
+}
+
+/* FOOTER -------------------------------------------------------------*/
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  footer nav {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 100vw;
+  }
+    
+  footer nav a , footer nav span{
+      align-self: flex-end;
+  }
+
+footer nav span {
+  font-family: PPEditorialNew-Ultralight;
+  text-transform:capitalize;
+}
+
+footer nav span:hover {
+  cursor: pointer;
+  font-family: PPEditorialNew-UltralightItalic;
+}
+
+/* RESPONSIVE MEDIA -----------------------------------------------------*/
+/*MOBILE ----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+  /* BODY */
+  body {
+    font-size: 11pt;
+  }
+
+  /* HEADER */
+  #header-phone {
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), #E6E6E6);
+  }
+
+  #header-phone :nth-child(1){
+    position: fixed;
+    left:0;
+    top:0;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: PPEditorialNew-Ultralight;
+    font-size: 24pt;
+    text-transform: capitalize;
+  }
+
+  #header-phone :nth-child(1):hover {
+    cursor: pointer;
+    font-family: PPEditorialNew-UltralightItalic;
+  }
+
+  #header-phone :nth-child(2){
+    position: fixed;
+    right: 0;
+    padding-right: 20px;
+    top: 0;
+    padding-top: 30px;
+  }
+  
+  #header-tablet {
+    display: none;
+  }
+
+  /* HOME */
+  #home article {
+    font-size: 20pt;
+    padding-top: 100px;
+  }
+
+  #colophon {
+    position: relative;
+    padding-top: 40vh;
+    padding-bottom: 100px;
+    font-size: 9pt;
+  }
+
+  #object {
+    top: 40vh;
+    right: 0;
+    left: 0;
+    bottom: 10vh;
+    width: 100vw;
+  }
+  
+  #object model-viewer {    
+    left: 0;
+    bottom: 0;
+    height: 40vh;
+    width: 100vw;
+  } 
+
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 0;
+  }
+
+  /* PROJECTS */
+  .text-projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .project-img {
+    padding-bottom: 150px;
+  }
+
+  .indice-img {
+    padding-bottom: 150px;
+  }
+
+  /* FOOTER */
+  footer {
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), #E6E6E6);
+    padding-top: 40px;
+  }
+
+  footer nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    font-size: 11pt;
+  }
+
+  /* TOP BUTTON */
+  #myBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30pt;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--grey);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  #myBtn:hover {
+    background-color: var(--grey);
+    color: black;
+    transition: 0.2s;
+  }
+
+}
+
+/* TABLET _--------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+
+  #header-phone {
+    display: none;
+  }
+
+  #header-tablet {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  /* BODY */
+  body {
+    font-size: 12pt;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+  }
+
+  /* HOME */
+  #home article {
+    font-size: 20pt;
+  }
+  
+  #colophon {
+    position: absolute;
+    bottom: 100px;
+    font-size: 10pt;
+  }
+
+  #object {
+    top: 40vh;
+    right: 20px;
+    left: 35vw;
+    bottom: 20vh;
+    width: 65vw;
+  }
+  
+  #object model-viewer {    
+    height: 50vh;
+    width: 65vw;
+    left: 0;
+  } 
+
+  /* PROJECTS */
+  .text-projects {
+    position: sticky; 
+    top: 20px;
+    padding-top: 100px;
+    height: 75vh;
+  }
+
+  .indice-img {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .indice-img img {
+    width: 49%;
+  }
+  
+  /* FOOTER */
+  footer nav span {
+    font-size: 2.5vw;
+  }
+
+  /* TOP BUTTON */
+  #myBtn {
+    display: none;
+  }
+}
+
+/* DESKTOP ---------------------------------------------------------------*/
+@media only screen and (min-width: 992px) {
+  
+  /* HOME */
+  #home article {
+    font-size: 2.7vw;
+  }
+  #colophon {
+    position: relative;
+    padding-top: 90vh;
+  }
+
+  #object {
+    top: 30vh;
+    right: 0;
+    left: 25vw;
+    bottom: 10vh;
+    width: 70vw;
+  }
+  
+  #object model-viewer {    
+    height: 60vh;
+    width: 70vw;
+    left: 0;
+  } 
+
+  .grid {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    column-gap: 5%;
+  }
+
+  .text-projects {
+    position: sticky; 
+    top: 20px;
+    padding-top: 100px;
+    height: 75vh;
+  }
+  
+  /* PROJECTS */
+  .indice-img {
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .indice-img img {
+    width: 33%;
+    cursor: pointer;
+  }
+
+  .project-img {
+    padding-bottom: 100px;
+  }
+
+}
